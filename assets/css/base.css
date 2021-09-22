@@ -1,0 +1,44 @@
+/* chứa những thành phần chung */
+
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+}
+
+* {
+    box-sizing: inherit; /*kế thừa từ thẻ chứa nó, thẻ html*/
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+.grid {
+    width: 1200px;
+    max-width: 100%; /*tối đa 1200px*/
+    margin: 0 auto;
+}
+
+.grid__full-width {
+    width: 100%; /*ko muốn sd width 1200px*/
+}
+
+.grid__row {
+    display: flex;
+    flex-wrap: wrap; /*tự đẩy xuống hàng*/
+}
+
+/* Animation */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
