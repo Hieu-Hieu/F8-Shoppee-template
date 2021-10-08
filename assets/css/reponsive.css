@@ -62,7 +62,7 @@
   }
 }
 
-/* Mobile */
+/* --- Mobile ---*/
 @media (max-width: 739px) {
   :root {
     --header-height: 50px;
