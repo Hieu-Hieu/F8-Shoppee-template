@@ -10,6 +10,7 @@
     --header-height: 120px;
     --header-navbar-height: 34px;
     --header-with-search-height: calc(var(--header-height) - var(--header-navbar-height));
+    --header-sort-bar-height: 46px;
 }
 
 * {
@@ -21,16 +22,6 @@ html {
     line-height: 1.6rem;
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
-}
-
-.grid {
-    width: 1200px;
-    max-width: 100%; /*tối đa 1200px*/
-    margin: 0 auto;
-}
-
-.grid__full-width {
-    width: 100%; /*ko muốn sd width 1200px*/
 }
 
 .grid__row {
@@ -174,7 +165,7 @@ button {
     float: left;
 }
 
-.m-12 {
+.mg-12 {
     margin: 12px !important;
 }
 
@@ -261,6 +252,7 @@ button {
     display: flex;
     list-style: none;
     justify-content: center;
+    padding-left: 0;
 }
 
 .pagination__item {
